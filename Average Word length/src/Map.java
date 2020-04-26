@@ -4,7 +4,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class Map extends Mapper<LongWritable,Text,Text,IntWritable>
+public class Map  extends Mapper<LongWritable,Text,Text,IntWritable>
 {
     String line = new String();
     Text firstLetter = new Text();
@@ -14,9 +14,9 @@ public class Map extends Mapper<LongWritable,Text,Text,IntWritable>
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException 
     {
 
-        line = value.toString();
+        line =  value.toString();
 
-        for (String word : line.split("\\W+"))
+        for (String  word : line.split("\\W+"))
         {
             if (word.length() > 0) 
             {

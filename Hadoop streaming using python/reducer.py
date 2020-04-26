@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from operator import itemgetter
+from operator  import  itemgetter
 import sys
 
 current_word = None
@@ -13,12 +13,12 @@ for line in sys.stdin:
     line = line.strip()
 
     # parse the input we got from mapper.py
-    word, count = line.split('\t', 1)
+    word,  count = line.split('\t', 1)
 
     # convert count (currently a string) to int
     try:
         count = int(count)
-    except ValueError:
+    except  ValueError:
         # count was not a number, so silently
         # ignore/discard this line
         continue
@@ -30,10 +30,10 @@ for line in sys.stdin:
     else:
         if current_word:
             # write result to STDOUT
-            print '%s\t%s' % (current_word, current_count)
+            print '%s\t%s' % (current_word,  current_count)
         current_count = count
         current_word = word
 
 # do not forget to output the last word if needed!
 if current_word == word:
-    print '%s\t%s' % (current_word, current_count)
+    print '%s\t%s' % (current_word,  current_count)

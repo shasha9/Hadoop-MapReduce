@@ -3,8 +3,8 @@ MapReduce is the processing layer of Hadoop. MapReduce programming model is desi
 
 MapReduce program executes in three stages, namely map stage, shuffle stage, and reduce stage.
 
-##Map stage − 
+##Map stage −##
 The map or mapper’s job is to process the input data. Generally the input data is in the form of file or directory and is stored in the Hadoop file system (HDFS). The input file is passed to the mapper function line by line. The mapper processes the data and creates several small chunks of data.
 
-##Reduce stage − 
+##Reduce stage −## 
 This stage is the combination of the Shuffle stage and the Reduce stage. The Reducer’s job is to process the data that comes from the mapper. After processing, it produces a new set of output, which will be stored in the HDFS.

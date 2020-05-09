@@ -1,6 +1,8 @@
 # Hadoop-MapReduce
 MapReduce is the processing layer of Hadoop. MapReduce programming model is designed for processing large volumes of data in parallel by dividing the work into a set of independent tasks. You need to put business logic in the way MapReduce works and rest things will be taken care by the framework. Work (complete job) which is submitted by the user to master is divided into small works (tasks) and assigned to slaves.
 
+![map reduce](https://www.tutorialspoint.com/hadoop/images/mapreduce_algorithm.jpg)
+
 MapReduce program executes in three stages, namely map stage, shuffle stage, and reduce stage.
 
 ## Map stage −

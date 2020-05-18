@@ -7,14 +7,14 @@ import org.apache.hadoop.mapred.Mapper;
 import org.apache.hadoop.mapred.OutputCollector; 
 import org.apache.hadoop.mapred.Reporter; 
 
-public class WordMapper extends MapReduceBase implements Mapper<LongWritable,Text, Text, IntWritable> 
+public class WordMapper  extends MapReduceBase  implements Mapper<LongWritable,Text, Text, IntWritable> 
 { 
 
 	// Map function 
-	public void map(LongWritable key, Text value, OutputCollector<Text,IntWritable> output, Reporter rep) throws IOException 
+	public void map(LongWritable  key, Text  value, OutputCollector<Text,IntWritable> output, Reporter rep) throws IOException 
 	{ 
 
-		String line = value.toString(); 
+		String line = value.toString() ; 
 
 		// Splitting the line on spaces 
 		for (String word : line.split(" ")) 

@@ -21,7 +21,7 @@ public class WordMapper  extends MapReduceBase  implements Mapper<LongWritable,T
 		{ 
 			if (word.length() > 0) 
 			{ 
-				output.collect(new Text(word), new IntWritable(1)); 
+				output.collect(new Text(word), new  IntWritable(1)); 
 			} 
 		} 
 	} 

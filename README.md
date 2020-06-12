@@ -47,5 +47,5 @@ Hadoop Mapreduce is not limited to java it also supports various programming lan
 # 10. Hadoop Log Processing :
 Since it is a Map only task it includes only mapper and a driver to process access logs. It finds the n.o of Hits per Image format on a particular site.
 
-# 11. Hadoop Custom Partitoner :
-Implementing a custom partitioner helps us customising partitoners according to the requirement of the user and storing customised data in different Reducers.
+# 11. Hadoop Custom Partitioner :
+Implementing a custom partitioner helps us customising partitioners according to the requirement of the user and storing customised data in different Reducers.

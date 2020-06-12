@@ -36,7 +36,7 @@ For example- if we have two word in a file named Hadoop and Hive then the output
 Number of Hits on each unique IP Address on the basis of weblogs will be counted and stored in output file in HDFS < [name of Output dir mentioned in command]/part* >
 
 # 7. WordCount Using Combiner Class :
-A new Class is added in Driver code of the program making execution fast 😇 Combiner class gets executed just after mapping phase and aggregates the data to help reducer in faster execution.
+A new Class is added in Driver code of the program making execution fast.Combiner class gets executed just after mapping phase and aggregates the data to help reducer in faster execution.
 
 # 8. MRUnit Testing the MapReduce Code :
 Just like there is a testing tool in java "JUNIT" there is "MRUnit" in MapReduce to test whether the code is running properly or not. We can test code by passing sample inputs and check the outputs.
@@ -45,7 +45,7 @@ Just like there is a testing tool in java "JUNIT" there is "MRUnit" in MapReduce
 Hadoop Mapreduce is not limited to java it also supports various programming language like python perl and many other languages with the help of hadoop streaming libraries.
 
 # 10. Hadoop Log Processing :
-Since it is a Map only task it includes only mapper and a driver to process access logs. It finds theno of Hits per Image format on a particular site.
+Since it is a Map only task it includes only mapper and a driver to process access logs. It finds the n.o of Hits per Image format on a particular site.
 
 # 11. Hadoop Custom Partitoner :
 Implementing a custom partitioner helps us customising partitoners according to the requirement of the user and storing customised data in different Reducers.

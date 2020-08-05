@@ -18,7 +18,7 @@ public class Reduce extends Reducer<Text,IntWritable,Text,IntWritable>
                 sum += val.get();
                  count = count+1;
             }
-            Average = sum/count;
+            Average = sum/ count;
 
             output.write(Key,new IntWritable(Average));
      }

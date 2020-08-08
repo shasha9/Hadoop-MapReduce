@@ -11,7 +11,7 @@ public class Driver
 
     public static void main(String[] args) throws Exception 
     {
-        Configuration conf = new Configuration();
+        Configuration conf=new Configuration();
         Job job = Job.getInstance(conf, "No. of hits per IP");
         
         job.setJarByClass(Driver.class);
